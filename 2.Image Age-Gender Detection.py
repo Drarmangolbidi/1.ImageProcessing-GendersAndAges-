@@ -1,22 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import cv2
 import face_recognition
-
-
-# In[4]:
-
 
 image_to_detect = cv2.imread('pic3.jpg')
 all_face_locations = face_recognition.face_locations(image_to_detect,model='hog')
 print('There are {} Numbers of faces in this image'.format(len(all_face_locations)))
-
-
-
 
 for index,current_face_location in enumerate(all_face_locations):
     top_pos,right_pos,bottom_pos,left_pos = current_face_location
@@ -51,10 +38,3 @@ for index,current_face_location in enumerate(all_face_locations):
 cv2.imshow("Age and Gender",image_to_detect)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
-# In[ ]:
-
-
-
-
