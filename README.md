@@ -2,7 +2,13 @@
 
 <br>
 
-In this Bank I work for Broadcast to detect the ages and genders of People who have died in movies.
+In this Bank I work for Broadcast to detect the ages and genders of People who have died in movies. This program say gender and age of subject.
+
+<br>
+
+
+https://user-images.githubusercontent.com/109248678/180857677-8edc2804-2f91-4c87-9295-885ef513c10a.mp4
+
 
 <br>
 
