@@ -130,6 +130,15 @@ cv2.destroyAllWindows()
 - [ ] Simple! 
 - [ ] Intermediate!
 - [x] Hard!
+
+<br>
+
+## :blush:Step Three :( use this code for images ):blush:</b>
+
+<br>
+
+download "2.Image Age-Gender Detection.py" file after that download these image "pic1.jpg" & "pic2.jpg" & "pic3.jpg" . 
+
 <br>
 
 this is good site to learn blob : [Learn about blob ](https://www.pyimagesearch.com/2017/11/06/deep-learning-opencvs-blobfromimage-works/)
