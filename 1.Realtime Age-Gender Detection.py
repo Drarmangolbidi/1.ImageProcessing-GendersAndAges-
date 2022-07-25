@@ -1,25 +1,12 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import cv2
 import face_recognition
-
-
-# In[5]:
-
-
 webcam_video_stream = cv2.VideoCapture(0)
-
 all_face_locations = []
 
 while True:
     ret , current_frame = webcam_video_stream.read()
     current_frame_small = cv2.resize(current_frame , (0,0) , fx=0.25 , fy=0.25)
     all_face_locations = face_recognition.face_locations(current_frame_small , number_of_times_to_upsample=2,model='hog')
-    
     for index , current_face_location in enumerate(all_face_locations):
         top , right , bottom , left = current_face_location
         top = top*4
@@ -27,9 +14,7 @@ while True:
         bottom = bottom*4
         left = left*4
         current_face_image = current_frame[top:bottom , left:right]
-        
-        #https://www.pyimagesearch.com/2017/11/06/deep-learning-opencvs-blobfromimage-works/
-        
+
         #The ‘AGE_GENDER_MODEL_MEAN_VALUES’ using numpy. mean()        
         AGE_GENDER_MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
         
@@ -71,12 +56,9 @@ while True:
     
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-
 webcam_video_stream.release()
 cv2.destroyAllWindows()      
 
-
-# In[ ]:
 
 
 
